@@ -1,2 +1,3 @@
 # Operation-Manager-Tools
-Do Quick Arithmetic Calculations
+My first Github Project. <br>
+ICS Assignment given by Sadia Ma'am.
