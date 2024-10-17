@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-
 int main()
 {
     float x1, x2, y1, y2, ans;
@@ -27,7 +26,7 @@ if(opt < 1 || opt > 9){
     printf("Exiting the program. Goodbye!");
     return 0;
 }else if(opt == 7){
-    printf("Enter a non negative number: ");
+    printf("Enter a non-negative number: ");
     scanf("%f", &x1);
 }else if(opt == 8){
     printf("Enter the coordinates\n");
@@ -82,11 +81,19 @@ case 6:
     if(ans < 0){
         ans = -ans;
     }
+    break;
 case 7:
+    if(x1 < 0){
+        printf("Invalid Input. Enter a non-negative number.");
+        return 0;
+    }else{
     ans = sqrt(x1);
+    }
+    break;
 case 8:
     ans = sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
     printf("The distance between the points is: %.2f", ans);
+    return 0;
 default:
     break;
 }
